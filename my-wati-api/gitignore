@@ -1,0 +1,8 @@
+# Ignorar variáveis de ambiente
+.env
+
+# Ignorar dependências instaladas
+node_modules/
+
+# Ignorar logs
+npm-debug.log
