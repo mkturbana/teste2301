@@ -1,3 +1,5 @@
+require('dotenv').config(); // Carregar o .env
+
 const { extractLink } = require('./utils/extract-link');
 const { fetchHTML } = require('./utils/fetch-html');
 const { parseXML } = require('./utils/parse-xml');
@@ -38,4 +40,5 @@ module.exports = async (req, res) => {
     return res.status(500).json({ error: 'Erro interno do servidor.' });
   }
 };
+
 
